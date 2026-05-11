@@ -125,6 +125,32 @@ h3 {
   font-size: 2rem;
 }
 
+.evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.evidence a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid #ccd4db;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: white;
+  color: #151719;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.evidence a:hover {
+  border-color: #2f7d6b;
+  color: #1f6b5b;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 300px 1fr;
