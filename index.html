@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jupiter Tripwire</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div>
+          <p class="eyebrow">Solana narrative radar</p>
+          <h1>Jupiter Tripwire</h1>
+        </div>
+        <button id="refresh" type="button">Refresh</button>
+      </header>
+
+      <section class="summary" aria-label="Snapshot summary">
+        <div>
+          <span id="snapshot-time">Waiting for live data</span>
+          <strong id="headline">Scanning Jupiter market signals...</strong>
+        </div>
+        <div class="summary-stat">
+          <span>Tripwires</span>
+          <strong id="tripwire-count">0</strong>
+        </div>
+      </section>
+
+      <section class="layout">
+        <aside class="panel">
+          <h2>Watchlist</h2>
+          <p>
+            The scanner watches liquid Solana assets, compares short-term flow
+            against 24h context, and asks Jupiter Swap V2 whether a small SOL
+            route is healthy.
+          </p>
+          <div id="watchlist" class="watchlist"></div>
+        </aside>
+
+        <section class="panel results">
+          <div class="section-title">
+            <h2>Live Signals</h2>
+            <span id="status">Loading</span>
+          </div>
+          <div id="signals" class="signals"></div>
+        </section>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <h2>Build Ideas</h2>
+          <span>Generated from current signal shape</span>
+        </div>
+        <div id="ideas" class="ideas"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>

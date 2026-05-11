@@ -1,0 +1,15 @@
+{
+  "name": "jupiter-tripwire",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Narrative detection dashboard using Jupiter Tokens, Price, and Swap APIs.",
+  "scripts": {
+    "start": "vite --host 127.0.0.1",
+    "snapshot": "node scripts/snapshot.mjs",
+    "check": "node scripts/snapshot.mjs --check"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}

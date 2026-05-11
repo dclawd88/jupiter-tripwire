@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/jup-lite/:path*",
+      "destination": "https://lite-api.jup.ag/:path*"
+    },
+    {
+      "source": "/jup/:path*",
+      "destination": "https://api.jup.ag/:path*"
+    }
+  ]
+}
