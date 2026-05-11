@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jupiter Tripwire Demo Slide</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #151719;
+      }
+      .frame {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+        background-image: url("./dashboard.png");
+        background-size: 1280px auto;
+        background-position: var(--position, top) left;
+      }
+      .banner {
+        position: absolute;
+        inset: 0 0 auto;
+        min-height: 116px;
+        padding: 28px 42px;
+        color: white;
+        background: rgba(10, 18, 16, 0.74);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 21px;
+        line-height: 1.35;
+        color: #dfe8e4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="banner">
+        <h1 id="title">Jupiter Tripwire</h1>
+        <p id="body">Solana narrative radar built with Jupiter developer APIs.</p>
+      </div>
+    </div>
+    <script>
+      const params = new URLSearchParams(location.search);
+      document.documentElement.style.setProperty(
+        "--position",
+        params.get("position") || "top"
+      );
+      document.querySelector("#title").textContent =
+        params.get("title") || "Jupiter Tripwire";
+      document.querySelector("#body").textContent =
+        params.get("body") ||
+        "Solana narrative radar built with Jupiter developer APIs.";
+    </script>
+  </body>
+</html>
