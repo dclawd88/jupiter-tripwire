@@ -67,6 +67,22 @@ The score is intentionally explainable. Every card includes the top reasons behi
 
 ## Submission Notes
 
+For the agent-only Solana narrative detection bounty, use:
+
+- Hosted tool: https://jupiter-tripwire.vercel.app
+- Repo: https://github.com/dclawd88/jupiter-tripwire
+- Narrative report: `docs/narrative-bounty-report.md`
+
+Current detected narratives:
+
+- Jupiter ecosystem governance and infra.
+- Perps and onchain exchange.
+- Liquid staking and MEV.
+- Oracle infrastructure.
+- DEX infrastructure.
+
+The report includes five concrete product ideas tied to these narratives and the scoring model below explains how the signals are ranked.
+
 The Jupiter DX report is in `docs/dx-report.md`.
 
 Colosseum submission status is documented in `docs/colosseum-status.md`.
