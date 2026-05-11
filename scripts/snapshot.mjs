@@ -93,7 +93,9 @@ function scoreToken(token, price, route) {
   const organic = clamp(Number(token.organicScore || 0) / 7, 0, 14);
   const flow = clamp((buyFlow - 1) * 14 + (organicFlow - 1) * 8, -12, 18);
   const depth = clamp(Math.log10(Math.max(Number(token.liquidity || 1), 1)) * 2, 0, 16);
-  const routeHealth = route ? clamp(12 - routeImpact * 60 - routeSteps, 0, 12) : 8;
+  const routeStatus = token.id === SOL_MINT ? "base" : route ? "available" : "unavailable";
+  const routeHealth =
+    routeStatus === "base" ? 8 : route ? clamp(12 - routeImpact * 60 - routeSteps, 0, 12) : 2;
   const riskPenalty =
     (token.isVerified ? 0 : 12) +
     (token.audit?.topHoldersPercentage > 25 ? 8 : 0) +
@@ -114,6 +116,7 @@ function scoreToken(token, price, route) {
     organicScore: token.organicScore,
     organicScoreLabel: token.organicScoreLabel,
     verified: token.isVerified,
+    routeStatus,
     stats: {
       price5m: s5.priceChange,
       price1h: s1.priceChange,
@@ -165,7 +168,11 @@ function makeIdeas(signals) {
 function toMarkdown(snapshot) {
   const rows = snapshot.signals
     .map((signal) => {
-      const route = signal.route ? `${signal.route.router || "route"} / ${signal.route.routeSteps} steps` : "base";
+      const route = signal.route
+        ? `${signal.route.router || "route"} / ${signal.route.routeSteps} steps`
+        : signal.routeStatus === "base"
+          ? "base"
+          : "unavailable";
       return `| ${signal.symbol} | ${signal.score} | ${formatMoney(signal.usdPrice)} | ${formatPct(signal.stats.price1h)} | ${formatPct(signal.stats.volume5m)} | ${route} | ${signal.reasons.join("; ")} |`;
     })
     .join("\n");

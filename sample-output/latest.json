@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T21:51:34.324Z",
+  "generatedAt": "2026-05-11T23:04:31.567Z",
   "watchlist": [
     {
       "query": "SOL",
@@ -36,34 +36,46 @@
   ],
   "signals": [
     {
-      "id": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
-      "name": "JITO",
-      "symbol": "JTO",
-      "narrative": "liquid staking and MEV",
-      "score": 58,
-      "usdPrice": 0.5148945147636177,
-      "liquidity": 232010.04139754217,
-      "mcap": 241556959.100596,
-      "holderCount": 82248,
-      "organicScore": 83.50057023356592,
+      "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "name": "Jupiter",
+      "symbol": "JUP",
+      "narrative": "Jupiter ecosystem governance and infra",
+      "score": 79,
+      "usdPrice": 0.24815389188609135,
+      "liquidity": 3567620.4319449146,
+      "mcap": 823710323.6448727,
+      "holderCount": 843939,
+      "organicScore": 99.80333791901549,
       "organicScoreLabel": "high",
       "verified": true,
+      "routeStatus": "available",
       "stats": {
-        "price5m": -0.09384324108955207,
-        "price1h": 0.659133028236403,
-        "price24h": 1.6230404708413217,
-        "volume5m": -59.373173117505985,
-        "volume1h": -93.25023922560445,
-        "volume24h": -9.109505891287382,
-        "buyFlow": 9.0857998177658,
-        "organicFlow": 32.5188888800669,
-        "traders1h": 53,
-        "netBuyers1h": 25
+        "price5m": 0.1801217692786197,
+        "price1h": 0.5645735765594573,
+        "price24h": -7.144607958041959,
+        "volume5m": 176.34042287570847,
+        "volume1h": 63.96559703013558,
+        "volume24h": 131.3553844138638,
+        "buyFlow": 1.5151854737268013,
+        "organicFlow": 2.038670190450576,
+        "traders1h": 771,
+        "netBuyers1h": 125
       },
-      "route": null,
+      "route": {
+        "router": "metis",
+        "swapType": "aggregator",
+        "priceImpactPct": "-0.00010733433684613528",
+        "routeSteps": 2,
+        "labels": [
+          "Riptide",
+          "Dynamic Swap"
+        ]
+      },
       "reasons": [
-        "-59.37% 5m volume shock",
-        "84 organic score"
+        "+176.34% 5m volume shock",
+        "125 net buyers in 1h",
+        "100 organic score",
+        "2 Jupiter route steps"
       ]
     },
     {
@@ -71,101 +83,71 @@
       "name": "Wrapped SOL",
       "symbol": "SOL",
       "narrative": "base asset and routing depth",
-      "score": 56,
-      "usdPrice": 97.50234123412693,
-      "liquidity": 759945423.9495705,
-      "mcap": 56345458454.950554,
+      "score": 59,
+      "usdPrice": 97.44229152636802,
+      "liquidity": 761345251.840251,
+      "mcap": 56304898204.04382,
       "holderCount": 3820662,
-      "organicScore": 99.29375290965804,
+      "organicScore": 99.28351167886258,
       "organicScoreLabel": "high",
       "verified": true,
+      "routeStatus": "base",
       "stats": {
-        "price5m": -0.02104650672486371,
-        "price1h": -0.23443751052209905,
-        "price24h": 2.2293349116660184,
-        "volume5m": 4.350970920862282,
-        "volume1h": -62.06818578560059,
-        "volume24h": 52.860036268448276,
-        "buyFlow": 0.9764645658624839,
-        "organicFlow": 1.0767429020589507,
-        "traders1h": 127037,
-        "netBuyers1h": 14266
+        "price5m": -0.23123865626842716,
+        "price1h": -0.29206339856100694,
+        "price24h": 1.1639698398103504,
+        "volume5m": -20.54678225014883,
+        "volume1h": 80.00755011350307,
+        "volume24h": 56.54051448250307,
+        "buyFlow": 0.9937208106414899,
+        "organicFlow": 0.9355463472319995,
+        "traders1h": 117731,
+        "netBuyers1h": 11937
       },
       "route": null,
       "reasons": [
-        "14.27K net buyers in 1h",
+        "11.94K net buyers in 1h",
         "99 organic score"
       ]
     },
     {
-      "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-      "name": "Jupiter",
-      "symbol": "JUP",
-      "narrative": "Jupiter ecosystem governance and infra",
-      "score": 56,
-      "usdPrice": 0.24494457594529806,
-      "liquidity": 3553751.536901412,
-      "mcap": 813292651.9720296,
-      "holderCount": 843930,
-      "organicScore": 99.70425275359501,
+      "id": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+      "name": "JITO",
+      "symbol": "JTO",
+      "narrative": "liquid staking and MEV",
+      "score": 48,
+      "usdPrice": 0.5210140089894055,
+      "liquidity": 235025.5532785764,
+      "mcap": 244427850.85420808,
+      "holderCount": 82221,
+      "organicScore": 84.19861349156992,
       "organicScoreLabel": "high",
       "verified": true,
+      "routeStatus": "available",
       "stats": {
-        "price5m": -0.021135114789446758,
-        "price1h": 0.9100844618906775,
-        "price24h": -6.561100952749066,
-        "volume5m": 5.182586303343382,
-        "volume1h": -6.771423873530584,
-        "volume24h": 164.26443416202852,
-        "buyFlow": 1.4297002255776072,
-        "organicFlow": 1.2361115935365616,
-        "traders1h": 686,
-        "netBuyers1h": 115
+        "price5m": 0.06900430604614723,
+        "price1h": 0.8870500771923038,
+        "price24h": 1.3410163731309044,
+        "volume5m": -3.387698459317359,
+        "volume1h": 544.8802786322958,
+        "volume24h": 1.9382697316999618,
+        "buyFlow": 1.333630790314549,
+        "organicFlow": 258.18752982708173,
+        "traders1h": 117,
+        "netBuyers1h": 28
       },
       "route": {
-        "router": "okx",
+        "router": "metis",
         "swapType": "aggregator",
-        "priceImpactPct": "0.0006483737690256134",
+        "priceImpactPct": "-0.00039060701498838907",
         "routeSteps": 1,
         "labels": [
-          "OKX DEX Router"
+          "Omnipair"
         ]
       },
       "reasons": [
-        "115 net buyers in 1h",
-        "100 organic score",
+        "84 organic score",
         "1 Jupiter route steps"
-      ]
-    },
-    {
-      "id": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
-      "name": "Pyth Network",
-      "symbol": "PYTH",
-      "narrative": "oracle infrastructure",
-      "score": 45,
-      "usdPrice": 0.05880784820583552,
-      "liquidity": 245425.95792113335,
-      "mcap": 338144074.2286621,
-      "holderCount": 304418,
-      "organicScore": 78.01341369628207,
-      "organicScoreLabel": "medium",
-      "verified": true,
-      "stats": {
-        "price5m": 0.15593332729924672,
-        "price1h": -0.2920653993164635,
-        "price24h": -0.026758939392682306,
-        "volume5m": -87.93322269632027,
-        "volume1h": 34.55976609660465,
-        "volume24h": -51.9407108145333,
-        "buyFlow": 1.7908680620861406,
-        "organicFlow": 0.02351398103977786,
-        "traders1h": 60,
-        "netBuyers1h": 16
-      },
-      "route": null,
-      "reasons": [
-        "-87.93% 5m volume shock",
-        "78 organic score"
       ]
     },
     {
@@ -173,30 +155,72 @@
       "name": "Raydium",
       "symbol": "RAY",
       "narrative": "DEX infrastructure",
-      "score": 43,
-      "usdPrice": 0.8595837917428705,
-      "liquidity": 10979144.156498304,
-      "mcap": 231200507.91171,
-      "holderCount": 254784,
-      "organicScore": 89.2790154024976,
+      "score": 44,
+      "usdPrice": 0.8608222727976896,
+      "liquidity": 10975755.758681113,
+      "mcap": 231533619.64748695,
+      "holderCount": 254783,
+      "organicScore": 89.13329186655704,
       "organicScoreLabel": "high",
       "verified": true,
+      "routeStatus": "unavailable",
       "stats": {
-        "price5m": -0.6405341561520467,
-        "price1h": -0.46432632895096143,
-        "price24h": -1.6362394172889438,
-        "volume5m": 108.09939334160018,
-        "volume1h": -41.70685160649403,
-        "volume24h": -30.794751928400704,
-        "buyFlow": 0.7035661585670276,
-        "organicFlow": 0.9634467206661558,
-        "traders1h": 130,
-        "netBuyers1h": 26
+        "price5m": -0.14838759002859334,
+        "price1h": -0.07581462174837858,
+        "price24h": -2.558893356377464,
+        "volume5m": 154.2357878551326,
+        "volume1h": -30.350304242232802,
+        "volume24h": -37.02842972848998,
+        "buyFlow": 1.61867430445789,
+        "organicFlow": 0.35017571911128925,
+        "traders1h": 131,
+        "netBuyers1h": 38
       },
       "route": null,
       "reasons": [
-        "+108.10% 5m volume shock",
+        "+154.24% 5m volume shock",
         "89 organic score"
+      ]
+    },
+    {
+      "id": "HZ1JovNiVvGrGNiiYvEozEVgZ58xaU3RKwX8eACQBCt3",
+      "name": "Pyth Network",
+      "symbol": "PYTH",
+      "narrative": "oracle infrastructure",
+      "score": 40,
+      "usdPrice": 0.05870666366036444,
+      "liquidity": 244644.3500327268,
+      "mcap": 337562264.9038157,
+      "holderCount": 304421,
+      "organicScore": 77.78446891721562,
+      "organicScoreLabel": "medium",
+      "verified": true,
+      "routeStatus": "available",
+      "stats": {
+        "price5m": -0.20722172771953765,
+        "price1h": -0.42977055158477534,
+        "price24h": -1.459599117425781,
+        "volume5m": -75.0485661493116,
+        "volume1h": 181.819474583226,
+        "volume24h": -52.12713572741444,
+        "buyFlow": 0.8221016848418763,
+        "organicFlow": 0.7073382101385525,
+        "traders1h": 76,
+        "netBuyers1h": 15
+      },
+      "route": {
+        "router": "jupiterz",
+        "swapType": "rfq",
+        "priceImpactPct": "-0.0015412704769661412",
+        "routeSteps": 1,
+        "labels": [
+          "JupiterZ"
+        ]
+      },
+      "reasons": [
+        "-75.05% 5m volume shock",
+        "78 organic score",
+        "1 Jupiter route steps"
       ]
     },
     {
@@ -205,41 +229,41 @@
       "symbol": "Bonk",
       "narrative": "Solana consumer and meme liquidity",
       "score": 39,
-      "usdPrice": 0.000007591164423321311,
-      "liquidity": 4029821.7235523616,
-      "mcap": 667982503.24767,
-      "holderCount": 1005867,
-      "organicScore": 92.8602329086531,
+      "usdPrice": 0.000007552970571100222,
+      "liquidity": 4014989.021693554,
+      "mcap": 664621645.1266911,
+      "holderCount": 1005873,
+      "organicScore": 91.87015552557119,
       "organicScoreLabel": "high",
       "verified": true,
+      "routeStatus": "available",
       "stats": {
-        "price5m": -0.22264667131900143,
-        "price1h": -0.0603025054643794,
-        "price24h": -1.0272375177149584,
-        "volume5m": 236.2809769523368,
-        "volume1h": -11.38158733927546,
-        "volume24h": -5.3379199229649945,
-        "buyFlow": 0.926056290927745,
-        "organicFlow": 0.09155906676005915,
-        "traders1h": 238,
-        "netBuyers1h": 67
+        "price5m": 0.03625241030162613,
+        "price1h": -0.4084098724121789,
+        "price24h": -2.8898755156887006,
+        "volume5m": 124.8233062861638,
+        "volume1h": -30.097387548297167,
+        "volume24h": -24.384757098909624,
+        "buyFlow": 0.5644961012692329,
+        "organicFlow": 0.48102087088962436,
+        "traders1h": 228,
+        "netBuyers1h": 81
       },
       "route": {
-        "router": "metis",
+        "router": "dflow",
         "swapType": "aggregator",
-        "priceImpactPct": "-0.00008683322349538697",
-        "routeSteps": 3,
+        "priceImpactPct": "0.0012804658732301103",
+        "routeSteps": 2,
         "labels": [
-          "Manifest",
-          "Dynamic Swap",
-          "Meteora DLMM"
+          "PancakeSwap",
+          "ZeroFi"
         ]
       },
       "reasons": [
-        "+236.28% 5m volume shock",
-        "67 net buyers in 1h",
-        "93 organic score",
-        "3 Jupiter route steps"
+        "+124.82% 5m volume shock",
+        "81 net buyers in 1h",
+        "92 organic score",
+        "2 Jupiter route steps"
       ]
     },
     {
@@ -247,51 +271,67 @@
       "name": "Drift",
       "symbol": "DRIFT",
       "narrative": "perps and onchain exchange",
-      "score": 9,
-      "usdPrice": 0.03640741198134415,
-      "liquidity": 83851.07875735142,
-      "mcap": 22263708.540586367,
-      "holderCount": 28654,
-      "organicScore": 62.77082904466287,
+      "score": 21,
+      "usdPrice": 0.03617607554278785,
+      "liquidity": 83533.9962997591,
+      "mcap": 22122242.647721644,
+      "holderCount": 28642,
+      "organicScore": 62.60700773067268,
       "organicScoreLabel": "medium",
       "verified": true,
+      "routeStatus": "unavailable",
       "stats": {
-        "price1h": -0.0975674346998507,
-        "price24h": -0.5846904127269901,
-        "volume1h": 15.411571093194526,
-        "volume24h": 7.859064900752519,
-        "buyFlow": 0.8457284926612983,
+        "price5m": -0.46227572620458224,
+        "price1h": -0.6900564571506025,
+        "price24h": -3.201060616200931,
+        "volume5m": 319.8113336849008,
+        "volume1h": -57.453397256643356,
+        "volume24h": 9.661266065832418,
+        "buyFlow": 0.35677067110873606,
         "organicFlow": 0,
-        "traders1h": 12,
-        "netBuyers1h": 5
+        "traders1h": 7,
+        "netBuyers1h": 1
       },
       "route": null,
-      "reasons": []
+      "reasons": [
+        "+319.81% 5m volume shock"
+      ]
     },
     {
       "id": "3VmjYB6Mc7uLDyQUWAsii92WAAXnjQ925F6Bebk9pump",
       "name": "wallahi im fucked",
       "symbol": "wif",
       "narrative": "high-beta meme attention",
-      "score": 3,
-      "usdPrice": 0.000002749552796717074,
-      "liquidity": 2944.2597129557716,
-      "mcap": 2749.552796717074,
-      "holderCount": 5,
+      "score": 0,
+      "usdPrice": 0.0000027334337300143167,
+      "liquidity": 2927.9484970114827,
+      "mcap": 2733.4337300143166,
+      "holderCount": 4,
       "organicScore": 0,
       "organicScoreLabel": "low",
+      "routeStatus": "available",
       "stats": {
-        "price24h": -43.043616146372734,
-        "volume1h": -100,
-        "buyFlow": 1,
-        "organicFlow": 1
+        "price24h": -43.377519081999445,
+        "buyFlow": 0,
+        "organicFlow": 1,
+        "traders1h": 1
       },
-      "route": null,
-      "reasons": []
+      "route": {
+        "router": "dflow",
+        "swapType": "aggregator",
+        "priceImpactPct": "-0.01193428347282924",
+        "routeSteps": 1,
+        "labels": [
+          "Pump.fun"
+        ]
+      },
+      "reasons": [
+        "1 Jupiter route steps"
+      ]
     }
   ],
   "ideas": [
-    "Build alert feeds around JTO, SOL, JUP when short-window volume accelerates but route impact remains low.",
+    "Build alert feeds around JUP, SOL, JTO when short-window volume accelerates but route impact remains low.",
     "Expose route friction as a trader-facing warning before swaps, especially when attention spikes faster than liquidity.",
     "Use organic score plus holder concentration to filter narrative ideas for builders who do not want to chase thin spikes.",
     "Run hourly schema and latency checks against Jupiter APIs to catch integration drift before user-facing failures."

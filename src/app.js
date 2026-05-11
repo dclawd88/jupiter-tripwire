@@ -128,7 +128,9 @@ function scoreToken(token, price, route) {
   const organic = clamp(Number(token.organicScore || 0) / 7, 0, 14);
   const flow = clamp((buyFlow - 1) * 14 + (organicFlow - 1) * 8, -12, 18);
   const depth = clamp(Math.log10(Math.max(Number(token.liquidity || 1), 1)) * 2, 0, 16);
-  const routeHealth = route ? clamp(12 - routeImpact * 60 - routeSteps, 0, 12) : 8;
+  const routeStatus = token.id === SOL_MINT ? "base" : route ? "available" : "unavailable";
+  const routeHealth =
+    routeStatus === "base" ? 8 : route ? clamp(12 - routeImpact * 60 - routeSteps, 0, 12) : 2;
   const riskPenalty =
     (token.isVerified ? 0 : 12) +
     (token.audit?.topHoldersPercentage > 25 ? 8 : 0) +
@@ -153,6 +155,7 @@ function scoreToken(token, price, route) {
     organicScoreLabel: token.organicScoreLabel,
     verified: token.isVerified,
     topHoldersPercentage: token.audit?.topHoldersPercentage,
+    routeStatus,
     stats: {
       price5m: s5.priceChange,
       price1h: s1.priceChange,
@@ -253,7 +256,7 @@ function renderSnapshot(snapshot) {
             <div><dt>Liquidity</dt><dd>${fmtCompact.format(Number(signal.liquidity || 0))}</dd></div>
           </dl>
           <div class="route">
-            ${signal.route ? `${escapeHtml(signal.route.router || "route")} via ${signal.route.labels.map(escapeHtml).join(" -> ")}` : "Base asset"}
+            ${routeSummary(signal)}
           </div>
           <ul>
             ${signal.reasons.map((reason) => `<li>${escapeHtml(reason)}</li>`).join("")}
@@ -278,6 +281,14 @@ function renderSnapshot(snapshot) {
 function setStatus(label, busy) {
   elements.status.textContent = label;
   elements.refresh.disabled = busy;
+}
+
+function routeSummary(signal) {
+  if (signal.route) {
+    const labels = signal.route.labels.length ? ` via ${signal.route.labels.map(escapeHtml).join(" -> ")}` : "";
+    return `${escapeHtml(signal.route.router || "route")}${labels}`;
+  }
+  return signal.routeStatus === "base" ? "Base asset" : "Route unavailable in probe";
 }
 
 async function fetchJson(url) {
