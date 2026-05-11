@@ -69,6 +69,8 @@ The score is intentionally explainable. Every card includes the top reasons behi
 
 The Jupiter DX report is in `docs/dx-report.md`.
 
+Colosseum submission status is documented in `docs/colosseum-status.md`.
+
 Sample output is generated into:
 
 - `sample-output/latest.json`
